@@ -1,0 +1,7 @@
+<div class="tasks_container">
+	{{task-header}}
+	{{task-body tasks=model.total deleteTask="deleteTask" taskComplete="taskComplete" task=task}}
+	{{task-input tasks=model.total createTask="createTask"}}
+	{{task-footer tasks=model.total}}
+</div>
+

@@ -1,0 +1,5 @@
+<li class="tasks_item {{if odd "odd"}}" data="{{ind}} - {{odd}}">
+	<div class="tasks_check {{if task.done "check_task_done"}}" onclick={{action "task_complete" task}}></div>
+	<span class="tasks_text {{if task.done "task_text_done"}}">{{task-row-style ind}}.{{task.task}}</span>
+	<span class="tasks_delete" onclick={{action "task_delete" task}}>X</span>
+</li>

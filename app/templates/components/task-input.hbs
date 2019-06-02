@@ -1,0 +1,11 @@
+<div id="input_task" class="centered">
+	{{input value=value
+        class="task_input_elem"
+        placeholder="משימה חדשה"
+        type="text"
+        createTask="createTask"
+    }}
+	{{yield results}}
+	<button class="task_input_btn" onclick={{action "task_add_approve" task}}>אשר</button>
+	<span id="input_task_close" onclick={{action "close_tasks_add"}}>x</span>
+</div>

@@ -1,0 +1,7 @@
+<div class="tasks_body">
+	<ul class="tasks_list">
+		{{#each tasks as |taskitem index|}}
+			{{task-item task=taskitem ind=index odd=this.odd deleteTask="deleteTask" taskComplete="taskComplete" task=task}}
+		{{/each}}
+	</ul>
+</div>
